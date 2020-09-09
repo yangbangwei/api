@@ -1,24 +1,24 @@
-九月 08, 2020 10:42:06 上午 io.github.yedaxia.apidocs.LogUtils info
+九月 09, 2020 2:09:22 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: find java src paths:  [/Users/yangbangwei/Documents/IDEA/api/src/main/java/]
-九月 08, 2020 10:42:06 上午 io.github.yedaxia.apidocs.LogUtils info
+九月 09, 2020 2:09:22 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: project type not set, try to figure out...
-九月 08, 2020 10:42:06 上午 io.github.yedaxia.apidocs.LogUtils info
+九月 09, 2020 2:09:22 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: start find controllers in path : /Users/yangbangwei/Documents/IDEA/api/src/main/java/
-九月 08, 2020 10:42:07 上午 io.github.yedaxia.apidocs.LogUtils info
+九月 09, 2020 2:09:22 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: find controller file : ApiController.java
-九月 08, 2020 10:42:07 上午 io.github.yedaxia.apidocs.LogUtils info
+九月 09, 2020 2:09:22 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: start to parse controller file : ApiController.java
-九月 08, 2020 10:42:07 上午 io.github.yedaxia.apidocs.LogUtils info
+九月 09, 2020 2:09:22 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: success to parse controller file : ApiController.java
-九月 08, 2020 10:42:07 上午 io.github.yedaxia.apidocs.LogUtils info
+九月 09, 2020 2:09:22 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: generate api docs start...
-九月 08, 2020 10:42:07 上午 io.github.yedaxia.apidocs.LogUtils info
+九月 09, 2020 2:09:22 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: start to generate docs for controller file : /Users/yangbangwei/Documents/IDEA/api/src/main/java/com/yangbw/test/api/controller/ApiController.java
-九月 08, 2020 10:42:08 上午 io.github.yedaxia.apidocs.LogUtils info
+九月 09, 2020 2:09:23 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: success to generate docs for controller file : /Users/yangbangwei/Documents/IDEA/api/src/main/java/com/yangbw/test/api/controller/ApiController.java
-九月 08, 2020 10:42:08 上午 io.github.yedaxia.apidocs.LogUtils info
+九月 09, 2020 2:09:23 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: generate index start !!!
-九月 08, 2020 10:42:08 上午 io.github.yedaxia.apidocs.LogUtils info
+九月 09, 2020 2:09:23 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: generate index done !!!
-九月 08, 2020 10:42:08 上午 io.github.yedaxia.apidocs.LogUtils info
+九月 09, 2020 2:09:23 下午 io.github.yedaxia.apidocs.LogUtils info
 信息: info: generate api docs done !!!
