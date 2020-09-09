@@ -173,7 +173,7 @@ public class ApiController {
         if (versionCode == 1) {
             return AjaxResult.success("当前已是最新版本");
         }
-        return AjaxResult.success(new Verson(1, "www.baiud.com", false, "更新内容"));
+        return AjaxResult.success(new Version("v1.0.0", "www.baiud.com", false, "更新内容"));
     }
 
     /**
@@ -208,14 +208,12 @@ public class ApiController {
     @PostMapping("discoverHot")
     public AjaxResult discoverHot(int pageNo) {
         List<DiscoverHot> bannerList = new ArrayList<>();
-        bannerList.add(new DiscoverHot("1",
-                "https://st-cn.meishij.net/r/85/43/8510835/s8510835_159952946230289.jpg",
-                "拔丝地瓜苹果", "https://iconfont.alicdn.com/t/e332943a-3ed4-46ca-80fb-585bff2a7b9b.png",
-                "杨大帅", "2020-09-09"));
-        bannerList.add(new DiscoverHot("1",
-                "https://st-cn.meishij.net/r/85/43/8510835/s8510835_159952946230289.jpg",
-                "拔丝地瓜苹果", "https://iconfont.alicdn.com/t/e332943a-3ed4-46ca-80fb-585bff2a7b9b.png",
-                "杨大帅", "2020-09-09"));
+        for (int i = 0; i < 10; i++) {
+            bannerList.add(new DiscoverHot("1",
+                    "https://st-cn.meishij.net/r/85/43/8510835/s8510835_159952946230289.jpg",
+                    "拔丝地瓜苹果", "https://iconfont.alicdn.com/t/e332943a-3ed4-46ca-80fb-585bff2a7b9b.png",
+                    "杨大帅", "2020-09-09"));
+        }
         return AjaxResult.success(bannerList);
     }
 }
