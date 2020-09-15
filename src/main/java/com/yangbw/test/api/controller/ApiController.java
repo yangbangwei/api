@@ -402,4 +402,86 @@ public class ApiController {
         }
         return AjaxResult.success(bannerList);
     }
+
+    /**
+     * 菜单
+     */
+    @PostMapping("menuList")
+    public AjaxResult menuList(int pageNo) {
+        List<MenuData> datas = new ArrayList<>();
+        MenuData menuData = new MenuData();
+        menuData.setId("1");
+        menuData.setAttention("411");
+        menuData.setLike("111");
+        menuData.setName("早点搭配");
+        menuData.setAvatar("https://iconfont.alicdn.com/t/ed46f318-c674-4320-8db4-12f37f4b5476.png");
+        menuData.setContent("并不是每天的早餐都是「吐司炒蛋」， 偶尔的「清粥小菜」让日子看起来也很恬淡。");
+        menuData.setType("1");
+        menuData.setPicUrls(Arrays.asList("http://img.kaiyanapp.com/0-0c160bdf2f1da9833b929e7e4e57b682.jpeg",
+                "http://img.kaiyanapp.com/2-0c160bdf2f1da9833b929e7e4e57b682.jpeg",
+                "http://img.kaiyanapp.com/1-0c160bdf2f1da9833b929e7e4e57b682.jpeg"));
+        datas.add(menuData);
+
+        menuData = new MenuData();
+        menuData.setId("2");
+        menuData.setAttention("112");
+        menuData.setLike("110");
+        menuData.setName("左宗棠鸡的做法");
+        menuData.setAvatar("https://iconfont.alicdn.com/t/fdb08ef7-0dbb-46bc-a570-3a50d06f1b40.png");
+        menuData.setContent("1、鸡腿肉280g切丁，姜片5g，蒜末5g，小米椒适量切段，甜椒20g切块\n" +
+                "2、倒入鸡腿肉，蛋黄，盐2g，玉米淀粉25g，搅拌均匀\n" +
+                "3、放入糖15g，白醋15g，生抽8g，淀粉5g，辣椒油10g搅拌\n" +
+                "4、倒入油200ml，大火烧至七成熟，放入鸡肉，大火炸至表面金黄\n" +
+                "5、另起锅倒入食用油5ml，倒入姜片，蒜末，小米椒，大火爆香\n" +
+                "6、倒入鸡肉，翻炒均匀，倒入调料 翻炒均匀，倒入甜椒");
+        menuData.setType("2");
+        menuData.setVideoUrl("https://vdse.bdstatic.com//4ce0a6eeb24802f7f9f4cff911357c5c?authorization=bce-auth-v1%2F40f207e648424f47b2e3dfbb1014b1a5%2F2017-05-11T09%3A02%3A31Z%2F-1%2F%2F5b89ecc8eaa02a42be55690e4417293c4dc719f17e7bfb3610a16292cad44020");
+        datas.add(menuData);
+
+        menuData = new MenuData();
+        menuData.setId("2");
+        menuData.setAttention("161");
+        menuData.setLike("121");
+        menuData.setName("紫薯山药糕的做法");
+        menuData.setAvatar("https://iconfont.alicdn.com/t/bcc0bec0-ab90-4680-b21a-485d616ab087.png");
+        menuData.setContent("1、紫薯200克切段，山药150克切段\n" +
+                "2、起锅隔水蒸熟，剥皮\n" +
+                "3、倒入紫薯，加糖粉10克，捣成泥\n" +
+                "4、倒入山药，糖粉10克，捣成泥\n" +
+                "5、取山药泥和紫薯泥各25克团成团，取模具按压成型");
+        menuData.setType("2");
+        menuData.setVideoUrl("https://vdse.bdstatic.com//f13a391bcf73de64c2e965eddae17fc8?authorization=bce-auth-v1%2F40f207e648424f47b2e3dfbb1014b1a5%2F2017-05-11T09%3A02%3A31Z%2F-1%2F%2F05e5f8a459a1c44cf5507778e239fe62d4d63104a5aa5dfdc4b9efbafad673f1");
+        datas.add(menuData);
+
+        menuData = new MenuData();
+        menuData.setId("2");
+        menuData.setAttention("211");
+        menuData.setLike("223");
+        menuData.setName("猪皮冻的做法");
+        menuData.setAvatar("https://iconfont.alicdn.com/t/ee5cb879-d937-47cf-96ca-347b3f27cff6.png");
+        menuData.setContent("1、猪皮280克切段，蒜末姜片各5克，香菜7克，小葱一根切段\n" +
+                "2、倒入猪皮开水下锅，焯水去腥去血沫\n" +
+                "3、清水1升大火煮沸，倒入猪皮，盐2克，生抽15克，老抽5克，倒入姜片，葱段，桂皮一块，八角一个，香叶片，料酒5克，大火煮沸转小火煮5分钟\n" +
+                "4、猪皮倒入模具，加入汤汁，冰箱冷冻成型\n" +
+                "5、做调料，醋20克，生抽10克，倒入蒜末，香菜，搅拌均匀\n" +
+                "6、猪皮冻切片");
+        menuData.setType("2");
+        menuData.setVideoUrl("https://vdse.bdstatic.com//d48576bd9e61d03d947236dd54e25b84?authorization=bce-auth-v1%2F40f207e648424f47b2e3dfbb1014b1a5%2F2017-05-11T09%3A02%3A31Z%2F-1%2F%2F75f155855b6bf749ab6a60a3ace6555a3a28bfc104884ef72a909afa7f3cbcc4");
+        datas.add(menuData);
+
+        menuData = new MenuData();
+        menuData.setId("2");
+        menuData.setAttention("12");
+        menuData.setLike("69");
+        menuData.setName("蒸肉丸做法");
+        menuData.setAvatar("https://iconfont.alicdn.com/t/001bb462-a3ff-4c12-af15-14fa0800049f.png");
+        menuData.setContent("1、香菇30克切末，五花肉150克\n" +
+                "2、倒入香菇末，蚝油10克，盐2克，淀粉20克，搅拌均匀\n" +
+                "3、馅料揉成丸子，清水500毫升，放上丸子隔水，大火蒸20分钟");
+        menuData.setType("2");
+        menuData.setVideoUrl("https://vdse.bdstatic.com//d73088a8eb9e9aa0f73a94e946459bbb?authorization=bce-auth-v1%2F40f207e648424f47b2e3dfbb1014b1a5%2F2017-05-11T09%3A02%3A31Z%2F-1%2F%2Fb564affa73db9906e8f7a8fde2814a5512708192fd267f814192eecd349a27ef");
+        datas.add(menuData);
+
+        return AjaxResult.success(datas);
+    }
 }
