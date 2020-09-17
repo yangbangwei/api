@@ -484,4 +484,41 @@ public class ApiController {
 
         return AjaxResult.success(datas);
     }
+
+    /**
+     * 获取用户信息
+     */
+    @GetMapping("couponList")
+    public AjaxResult couponList() {
+        List<Coupon> datas = new ArrayList<>();
+        Coupon coupon = new Coupon();
+        coupon.setDerate("6");
+        coupon.setPrice("69");
+        coupon.setTitle("4周年神券（厦门通用）");
+        coupon.setDeadline("今日有效");
+        datas.add(coupon);
+
+        coupon = new Coupon();
+        coupon.setDerate("10");
+        coupon.setPrice("99");
+        coupon.setTitle("4周年神券（厦门通用9月18到9月18日）");
+        coupon.setDeadline("9月18~9月18日");
+        datas.add(coupon);
+
+        coupon = new Coupon();
+        coupon.setDerate("10");
+        coupon.setPrice("99");
+        coupon.setTitle("4周年神券（厦门通用9月18到9月18日）");
+        coupon.setDeadline("9月18~9月18日");
+        datas.add(coupon);
+
+        coupon = new Coupon();
+        coupon.setDerate("20");
+        coupon.setPrice("99");
+        coupon.setTitle("4周年神券（厦门通用9月18到9月18日）");
+        coupon.setDeadline("9月18~9月18日");
+        datas.add(coupon);
+
+        return AjaxResult.success(datas);
+    }
 }

@@ -5,8 +5,9 @@
 1. 下载项目目录jar文件下api.jar文件。
 2. 打开cmd控制台。
 3. 输入 **java -jar**。
-4. 拖入api.jar文件，回车。
-5. 项目默认端口为9090。
+4. 拖入api.jar文件，回车。项目默认端口为9090。
+5. 确保手机在电脑在同个局域网中。
+6. 最后修改MvvmLib中Constant，BASE_URL地址。
 
 ## License
 
