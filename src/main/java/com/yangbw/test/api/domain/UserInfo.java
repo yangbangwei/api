@@ -10,6 +10,7 @@ public class UserInfo {
     private String head;
     private String present;
     private String discount;
-    private String blance;
+    private String balance;
+    private String token;
     private List<Banner.Data> banners;
 }

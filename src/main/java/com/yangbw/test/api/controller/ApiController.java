@@ -2,7 +2,6 @@ package com.yangbw.test.api.controller;
 
 import com.yangbw.test.api.common.AjaxResult;
 import com.yangbw.test.api.domain.*;
-import org.apache.logging.log4j.util.Strings;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
@@ -16,52 +15,6 @@ import java.util.*;
 @RestController
 @RequestMapping("api")
 public class ApiController {
-
-    private final HashMap<String, String> mUser = new HashMap<>();
-
-    /**
-     * 用户登录
-     *
-     * @param user 用户信息
-     * @return 注册结果
-     */
-    @PostMapping("login")
-    public AjaxResult login(User user) {
-        if (Strings.isBlank(user.getUsername())) {
-            return AjaxResult.error("用户名不能为空");
-        }
-        if (Strings.isBlank(user.getPassword())) {
-            return AjaxResult.error("密码不能为空");
-        }
-        String password = mUser.get(user.getUsername());
-        if (Strings.isBlank(password) || !user.getPassword().equals(password)) {
-            return AjaxResult.error("用户未注册或者密码有误");
-        }
-        user.setToken(UUID.randomUUID().toString());
-        return AjaxResult.success(user);
-    }
-
-    /**
-     * 用户注册
-     *
-     * @param user 登录信息
-     * @return 登录结果
-     */
-    @PostMapping("register")
-    public AjaxResult register(User user) {
-        if (Strings.isBlank(user.getUsername())) {
-            return AjaxResult.error("用户名不能为空");
-        }
-        if (Strings.isBlank(user.getPassword())) {
-            return AjaxResult.error("密码不能为空");
-        }
-        String password = mUser.get(user.getUsername());
-        if (!Strings.isBlank(password)) {
-            return AjaxResult.error("当前用户已注册");
-        }
-        mUser.put(user.getUsername(), user.getPassword());
-        return AjaxResult.success("用户注册成功");
-    }
 
     /**
      * 广告内容
@@ -180,8 +133,8 @@ public class ApiController {
     public AjaxResult userInfo() {
         UserInfo userInfo = new UserInfo();
         userInfo.setName("杨大帅");
-        userInfo.setHead("http://47.114.189.153:8002/static/img/profile.11585264.jpg");
-        userInfo.setBlance("1.00");
+        userInfo.setHead("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1600408434047&di=20d25db1c945ce21fad48b3c122d0b76&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201808%2F02%2F20180802232238_cyvsj.thumb.700_0.png");
+        userInfo.setBalance("1.00");
         userInfo.setDiscount("1");
         userInfo.setPresent("1");
         List<Banner.Data> bannerList = new ArrayList<>();

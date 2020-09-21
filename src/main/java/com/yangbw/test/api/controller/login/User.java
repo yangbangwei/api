@@ -1,8 +1,7 @@
-package com.yangbw.test.api.domain;
+package com.yangbw.test.api.controller.login;
 
 import lombok.Data;
-
-import java.io.Serializable;
+import lombok.NoArgsConstructor;
 
 /**
  * 用户管理对象 acs_user
@@ -11,13 +10,8 @@ import java.io.Serializable;
  * @date 2020-06-18
  */
 @Data
-public class User implements Serializable{
-
-    public User(String username, String password) {
-        this.username = username;
-        this.password = password;
-    }
-
+@NoArgsConstructor
+public class User {
     /**
      * 用户编号
      */
@@ -29,9 +23,19 @@ public class User implements Serializable{
     private String username;
 
     /**
-     * 用户类型
+     * 头像
      */
-    private String password;
+    private String avatar;
+
+    /**
+     * 手机号
+     */
+    private String phone;
+
+    /**
+     * 微信号
+     */
+    private String wechat;
 
     /**
      * 用户token
