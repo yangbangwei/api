@@ -61,10 +61,7 @@ public class LoginController {
      */
     @PostMapping("sendCode")
     public AjaxResult sendCode(String phone) {
-        if (Strings.isBlank(phone)) {
-            return AjaxResult.error("手机号不能为空");
-        }
-        return AjaxResult.success("发送验证码成功");
+        return AjaxResult.success();
     }
 
     /**
@@ -86,5 +83,22 @@ public class LoginController {
             return AjaxResult.error("验证码有误，请重试输入");
         }
         return AjaxResult.success(getUser());
+    }
+
+    /**
+     * 验证码
+     *
+     * @param code 验证码
+     * @return 登录结果
+     */
+    @PostMapping("verifyCode")
+    public AjaxResult verifyCode(String code) {
+        if (Strings.isBlank(code)) {
+            return AjaxResult.error("验证码不能为空");
+        }
+        if (!CORRECT.equals(code)) {
+            return AjaxResult.error("验证码有误，请重试输入");
+        }
+        return AjaxResult.success("发送成功");
     }
 }

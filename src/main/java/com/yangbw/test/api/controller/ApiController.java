@@ -127,23 +127,6 @@ public class ApiController {
     }
 
     /**
-     * 获取用户信息
-     */
-    @PostMapping("userInfo")
-    public AjaxResult userInfo() {
-        UserInfo userInfo = new UserInfo();
-        userInfo.setName("杨大帅");
-        userInfo.setHead("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1600408434047&di=20d25db1c945ce21fad48b3c122d0b76&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201808%2F02%2F20180802232238_cyvsj.thumb.700_0.png");
-        userInfo.setBalance("1.00");
-        userInfo.setDiscount("1");
-        userInfo.setPresent("1");
-        List<Banner.Data> bannerList = new ArrayList<>();
-        bannerList.add(new Banner.Data("1", "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2672137404,2311239074&fm=26&gp=0.jpg", "1", "https://www.baidu.com/index.php?tn=ylmf_4_pg&ch=7"));
-        userInfo.setBanners(bannerList);
-        return AjaxResult.success(userInfo);
-    }
-
-    /**
      * 发现-热门
      */
     @PostMapping("discoverHot")
@@ -439,7 +422,7 @@ public class ApiController {
     }
 
     /**
-     * 获取用户信息
+     * 活动券
      */
     @GetMapping("couponList")
     public AjaxResult couponList() {
