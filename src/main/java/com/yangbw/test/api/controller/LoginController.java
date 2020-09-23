@@ -1,6 +1,7 @@
-package com.yangbw.test.api.controller.login;
+package com.yangbw.test.api.controller;
 
 import com.yangbw.test.api.common.AjaxResult;
+import com.yangbw.test.api.domain.User;
 import org.apache.logging.log4j.util.Strings;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -61,7 +62,7 @@ public class LoginController {
      */
     @PostMapping("sendCode")
     public AjaxResult sendCode(String phone) {
-        return AjaxResult.success();
+        return AjaxResult.success("发送成功");
     }
 
     /**
@@ -99,6 +100,6 @@ public class LoginController {
         if (!CORRECT.equals(code)) {
             return AjaxResult.error("验证码有误，请重试输入");
         }
-        return AjaxResult.success("发送成功");
+        return AjaxResult.success("验证成功");
     }
 }

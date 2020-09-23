@@ -1,4 +1,4 @@
-package com.yangbw.test.api.controller.user;
+package com.yangbw.test.api.controller;
 
 import com.yangbw.test.api.common.AjaxResult;
 import com.yangbw.test.api.domain.Banner;
@@ -52,5 +52,13 @@ public class UserController {
             return AjaxResult.error("用户名重复，请修改");
         }
         return AjaxResult.success("更新成功");
+    }
+
+    /**
+     * 修改用户名
+     */
+    @PostMapping("changePhone")
+    public AjaxResult changePhone(String phone,String code) {
+        return AjaxResult.success();
     }
 }

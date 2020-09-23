@@ -7,7 +7,7 @@
 3. 输入 **java -jar**。
 4. 拖入api.jar文件，回车。项目默认端口为9090。
 5. 确保手机在电脑在同个局域网中。
-6. 最后修改MvvmLib中Constant，BASE_URL地址。
+6. 最后修改MvvmLib中Constant，BASE_URL地址为当前电脑IP地址。
 
 ## License
 

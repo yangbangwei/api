@@ -1,4 +1,4 @@
-package com.yangbw.test.api.controller.login;
+package com.yangbw.test.api.domain;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
